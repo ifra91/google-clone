@@ -1,0 +1,249 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', Arial;
+    font-weight: 500;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 0.7% -0.7%;
+}
+
+#content {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    height: 500px;
+}
+
+.container-gmail {
+    width: 18%;
+}
+
+.container-gmail ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-gmail ul li {
+    list-style-type: none;
+    margin: 2% 10% 2% 2%;
+    display: inline-flex;
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.container-gmail ul li:hover {
+    text-decoration: underline;
+}
+
+.gmail-dots img {
+    width: 110%;
+    height: 110%;
+    background-color: transparent;
+    position: relative;
+    padding-left: 40%;
+}
+
+.gmail-id-pic .tooltip-app,
+.gmail-dots .tooltip-app {
+    position: absolute;
+    background-color: rgb(80, 79, 79);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0.5% 0.7%;
+    border-radius: 5px;
+    word-spacing: 1%;
+    opacity: 0;
+}
+
+.gmail-dots .tooltip-app {
+    top: 9%;
+    right: 3%;
+}
+
+.gmail-dots:hover .tooltip-app,
+.gmail-id-pic:hover .tooltip-app {
+    opacity: 1;
+}
+
+.gmail-id-pic img {
+    border-radius: 50%;
+    position: relative
+}
+
+.gmail-id-pic .tooltip-app p {
+    font-weight: 540;
+    color: rgb(173, 169, 169);
+    padding: 0.1vw 0vw;
+}
+
+.gmail-id-pic .tooltip-app {
+    top: 9%;
+    right: 0.1%;
+}
+
+.container-google-img {
+    margin: 6% 0% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.container-search-bar {
+    display: flex;
+    border: transparent;
+    border-radius: 2vw;
+    height: 3vw;
+    width: 40vw;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    cursor: pointer;
+    padding: 0% 1.5%;
+    margin-bottom: 1%;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin: 0% 2%;
+    border-color: white;
+    border-image: none;
+}
+
+.input-search-box:focus {
+    outline: none;
+}
+
+.tile-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 15vw;
+}
+
+.tile-individual {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: 55%;
+    border-radius: 5%;
+    cursor: pointer;
+    justify-content: center;
+    margin: 1%;
+}
+
+.tile-individual:hover .more-icon img {
+    opacity: 1;
+}
+
+.tile-individual img {
+    width: 23%;
+    padding: 8%;
+    border-radius: 50%;
+    background-color: rgb(227, 229, 236);
+    margin-left: 30%
+}
+
+.tile-individual:hover {
+    background-color: rgb(232, 233, 240);
+}
+
+.more-icon img {
+    position: absolute;
+    width: 1.2vw;
+    height: 1.2vw;
+    bottom: 2.4vw;
+    left: 2.8vw;
+    opacity: 0;
+    background-color: rgb(232, 233, 240);
+}
+
+.more-icon:hover img {
+    background-color: rgb(215, 215, 219);
+}
+
+.tooltip-tile-1,
+.tooltip-tile-2 {
+    position: absolute;
+    background-color: rgb(245, 245, 185);
+    color: black;
+    border: 1px solid black;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 4%;
+    width: 55%;
+    height: auto;
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+}
+
+.tooltip-tile-2 span {
+    word-break: keep-all;
+    font-size: x-small;
+    padding: 3%;
+}
+
+.more-icon:hover .tooltip-tile-2 {
+    opacity: 1;
+}
+
+.tile-icon:hover .tooltip-tile-1 {
+    opacity: 1;
+}
+
+.tile-icon .tooltip-tile-1 {
+    left: 4.5vw;
+    bottom: 0vw;
+}
+
+.more-icon .tooltip-tile-2 {
+    bottom: 1.9vw;
+    left: 6.5vw;
+}
+
+#add-image-size {
+    height: 2vw;
+    width: 2vw;
+    position: relative;
+    margin: 0% 0% 0.8vw 0%;
+}
+
+.tile-title {
+    padding: 6% 0% 3% 0%;
+}
+
+.tile-title,
+.tile-icon,
+a {
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(36, 34, 34);
+    word-wrap: normal;
+}
+
+.tile-icon {
+    position: relative;
+}
