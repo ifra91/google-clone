@@ -156,6 +156,7 @@ input {
 
 .tile-individual:hover .more-icon img {
     opacity: 1;
+    transition: opacity 1s;
 }
 
 .tile-individual img {
@@ -185,25 +186,26 @@ input {
 }
 
 .more-icon:hover img {
-    background-color: rgb(202, 202, 214);
+    background-color: rgb(186, 186, 199);
 }
 
 .tooltip-tile-1,
 .tooltip-tile-2 {
     position: absolute;
-    background-color: rgb(245, 245, 185);
+    background-color: rgb(248, 246, 221);
     color: black;
     border: 1px solid black;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     z-index: 2;
     opacity: 0;
-    width: 60%;
+    width: 70%;
+    padding: 4%;
 }
 
 .tooltip-tile-2 span {
     word-break: keep-all;
-    font-size: x-small;
+    font-size: 12px;
     padding: 3%;
 }
 
@@ -217,11 +219,11 @@ input {
 
 .tile-icon .tooltip-tile-1 {
     left: 4.5vw;
-    bottom: 0vw;
+    top: 2.6vw;
 }
 
 .more-icon .tooltip-tile-2 {
-    top: 1vw;
+    top: 2vw;
     left: 7vw;
 }
 
