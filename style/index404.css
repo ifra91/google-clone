@@ -1,136 +1,282 @@
         * {
             margin: 0%;
             padding: 0%;
-            font-family: 'Space Mono';
         }
         
-        .header-container {
-            display: flex;
-            justify-content: flex-start;
-            padding: 1%;
+        body {
+            position: relative;
+            background: #FFFFFF;
         }
         
-        .header-container P {
-            font-size: 20px;
-            font-family: 'Space Mono';
+        header {
+            position: absolute;
+            width: 9vw;
+            height: 2vw;
+            left: 5vw;
+            top: 1.25vw;
+            font-family: 'Inconsolata';
+            font-style: normal;
             font-weight: 700;
+            font-size: 1.25vw;
+            line-height: 2vw;
         }
         
         .main-container {
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            margin: 1%;
-        }
-        
-        .img-container {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .img-container img {
-            display: flex;
-            align-items: center;
-            width: 90%;
-            height: 90%;
-            padding: 0% 10% 5% 0%;
             position: relative;
+            top: 15vw;
+        }
+        
+        .scarecrow {
+            position: relative;
+            left: 5.35%;
+            right: 57.21%;
+            top: 24.54%;
+            bottom: 34.03%;
+            width: 20vw;
+            height: 20vw;
+        }
+        
+        img {
+            position: absolute;
+            width: 37.5vw;
+            height: 31.1vw;
+            top: -4vw;
         }
         
         .content-container {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+        }
+        
+        .content-container p {
+            position: absolute;
+            width: 40.7vw;
+            height: -5.375vw;
+            height: 13.2vw;
+            top: -4vw;
+            left: 49vw;
             font-family: 'Space Mono';
-            position: relative;
-            width: 100%;
-            height: 100%;
+            font-style: normal;
+            font-weight: 1000;
+            font-size: 4.5vw;
+            word-spacing: -3px;
+            line-height: 6.25vw;
+            color: #333333;
         }
         
-        .text-heading,
-        .text,
-        .text-button {
-            padding: 0% 5% 10% 0%;
-            margin: 0% 5%;
-            word-wrap: normal;
-            position: relative;
+        p.text {
+            position: absolute;
+            top: 11vw;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.67vw;
+            line-height: 2.25vw;
+            letter-spacing: -0.035em;
+            color: #4F4F4F;
+            margin-top: 2.25vw 0px 4vw 7.48vw;
+            width: 27.5vw;
+            height: 7.5vw;
         }
         
-        .text-heading p {
-            font-size: 4vw;
+        button {
+            position: absolute;
+            width: 13.5vw;
+            height: 4.25vw;
+            left: 49vw;
+            top: 22.2vw;
+            background: #333333;
+            color: #FFFFFF;
+            font-family: 'Space Mono';
+            font-style: normal;
             font-weight: 700;
+            font-size: 0.875vw;
+            line-height: 1.3125vw;
+            letter-spacing: -0.035em;
         }
         
-        .text {
-            padding-right: 35%;
-            font-size: larger;
+        footer {
+            position: absolute;
+            right: 40vw;
+            top: 605px;
         }
         
-        .text p {
-            color: grey;
+        footer p {
+            width: 19.94vw;
+            height: 1.2vw;
+            font-family: 'Montserrat';
+            font-style: normal;
             font-weight: 500;
-            word-spacing: 3%;
-        }
-        
-        .text-button button {
-            font-size: 16px;
-            font-weight: 700;
-            color: white;
-            background-color: rgb(41, 39, 39);
-            width: 250px;
-            height: 50px;
-            cursor: pointer;
-        }
-        
-        .footer-div {
-            font-size: x-small;
-            color: gray;
-            display: flex;
-            position: fixed;
-            top: 95%;
-            left: 45%;
+            font-size: 0.89vw;
+            line-height: 1.1vw;
+            text-align: center;
+            color: #BDBDBD;
         }
         
         @media only screen and (max-width:700px) {
             .main-container {
+                display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                justify-items: baseline;
+                position: relative;
+                top: 15vw;
             }
-            .text-heading p {
-                font-size: 64px;
+            header {
+                position: absolute;
+                width: 35.5vw;
+                height: 6.6vw;
+                font-family: 'Inconsolata';
+                font-style: normal;
                 font-weight: 700;
+                font-size: 6.45vw;
+                line-height: 25px;
+                letter-spacing: -0.08em;
+                left: 24px;
+                top: 20px;
+            }
+            img {
+                position: absolute;
+                width: 76.5vw;
+                height: 63.7vw;
+                left: 11.73%;
+                right: 11.78%;
+                top: 11.49%;
+                bottom: 63.44%;
+            }
+            .content-container p {
+                position: absolute;
+                width: 93.5vw;
+                height: -5.375vw;
+                height: 37.9vw;
+                top: 75vw;
+                left: 7vw;
+                font-family: 'Space Mono';
+                font-style: normal;
+                font-weight: 1000;
+                font-size: 12.8vw;
+                word-spacing: 1vw;
+                color: #333333;
+                line-height: 16vw;
+                letter-spacing: -0.035em;
+            }
+            p.text {
+                position: absolute;
+                width: 93.18vw;
+                height: 25.06vw;
+                left: 6.44vw;
+                top: 120.4vw;
+                font-size: 4.9vw;
+                line-height: 8vw;
+                overflow-wrap: break-word;
+                word-spacing: 1px;
+            }
+            button {
+                width: 57.6vw;
+                height: 18.14vw;
+                left: 7vw;
+                top: 156.2vw;
+                font-size: 3.8vw;
+                line-height: 21px;
+                letter-spacing: -0.035em;
+            }
+            footer {
+                position: absolute;
+                bottom: 7vw;
+                top: 274vw;
+                width: 83.5vw;
+                height: 4.95vw;
+                left: 6.73%;
+                top: 1327.49%;
+            }
+            footer p {
+                width: 76.94vw;
+                font-weight: 500;
+                font-size: 4.1vw;
+                line-height: 0.vw;
+                letter-spacing: 0.2vw;
             }
         }
         
-        @media only screen and (max-width:500px) {
-            * {
-                padding: 0%;
-                margin: 0%;
-            }
+        @media only screen and (max-width:400px) {
             .main-container {
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .text-heading p {
-                font-size: 12vw;
-                font-weight: 700;
-            }
-            .text-heading,
-            .text,
-            .text-button {
-                padding: 0% 0% 0% 0%;
-                margin: 0% 0% 10% 0%;
-                word-wrap: normal;
-                position: relative;
-            }
-            .img-container img {
                 display: flex;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                padding: 0% 10% 5% 0%;
+                flex-direction: column;
                 position: relative;
+                top: 15vw;
+            }
+            header {
+                position: absolute;
+                width: 35.5vw;
+                height: 6.6vw;
+                font-family: 'Inconsolata';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 6.45vw;
+                line-height: 25px;
+                letter-spacing: -0.08em;
+                left: 24px;
+                top: 20px;
+            }
+            img {
+                position: absolute;
+                width: 76.5vw;
+                height: 63.7vw;
+                left: 11.73%;
+                right: 11.78%;
+                top: 11.49%;
+                bottom: 63.44%;
+            }
+            .content-container p {
+                position: absolute;
+                width: 93.5vw;
+                height: -5.375vw;
+                height: 37.9vw;
+                top: 75vw;
+                left: 7vw;
+                font-family: 'Space Mono';
+                font-style: normal;
+                font-weight: 1000;
+                font-size: 12.8vw;
+                word-spacing: 1vw;
+                color: #333333;
+                line-height: 16vw;
+                letter-spacing: -0.035em;
+            }
+            p.text {
+                position: absolute;
+                width: 93.18vw;
+                height: 25.06vw;
+                left: 6.44vw;
+                top: 120.4vw;
+                font-size: 4.9vw;
+                line-height: 8vw;
+                overflow-wrap: break-word;
+                word-spacing: 1px;
+            }
+            button {
+                width: 57.6vw;
+                height: 18.14vw;
+                left: 7vw;
+                top: 156.2vw;
+                font-size: 3.8vw;
+                line-height: 21px;
+                letter-spacing: -0.035em;
+            }
+            footer {
+                position: absolute;
+                bottom: 7vw;
+                top: 274vw;
+                width: 83.5vw;
+                height: 4.95vw;
+                left: 6.73%;
+                top: 1327.49%;
+            }
+            footer p {
+                width: 76.94vw;
+                font-weight: 500;
+                font-size: 4.1vw;
+                line-height: 0.vw;
+                letter-spacing: 0.2vw;
             }
         }
