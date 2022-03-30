@@ -1,2 +1,3 @@
 # google-clone
-![](image/google-clonePage.JPG)
+<img src = images/google-clonePage.JPG width: 100px>
+![](images/google-clonePage.JPG)
